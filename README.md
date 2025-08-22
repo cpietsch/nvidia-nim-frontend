@@ -1,38 +1,66 @@
-# sv
+# NVIDIA NIM Frontend
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Simple Web interface written in Svelte 5 to use NVIDIA NIM Image Generator Services.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- ⚡ Built with [Svelte 5](https://svelte.dev/)
+- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com/)
+- 📦 TypeScript support
+- 🚀 Static site generation with GitHub Pages deployment
+- 🔧 Vite for fast development and building
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Development
 
-# create a new project in my-app
-npx sv create my-app
-```
+### Prerequisites
 
-## Developing
+- Node.js 18+ 
+- npm
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Getting Started
 
-```sh
-npm run dev
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Building
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-To create a production version of your app:
+### Available Scripts
 
-```sh
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run check` - Run TypeScript checks
+
+## Deployment
+
+The project is configured for automatic deployment to GitHub Pages via GitHub Actions. When you push to the `main` branch, the site will be automatically built and deployed.
+
+### Manual Deployment
+
+To build for production:
+
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+The built site will be in the `build/` directory.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Tech Stack
+
+- **Framework**: Svelte 5
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages via GitHub Actions
+
+## License
+
+GPL-3.0 License - see [LICENSE](LICENSE) file for details.
